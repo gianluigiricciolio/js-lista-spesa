@@ -13,15 +13,14 @@ const listaSpesa = [
 
 let count=0;
 
-let elementoLista = document.querySelector('.lista');
-console.log(elementoLista);
-let elementoLi = document.createElement('li');
-console.log(elementoLi);
+let ul = document.querySelector('.lista');
+console.log(ul);
 
 while (count<listaSpesa.length){
-    elementoLi.innerHTML = listaSpesa[count];
-    console.log(elementoLi.innerHTML);
-    elementoLista.append(elementoLi);
-    console.log(elementoLista.innerHTML);
+    let li = document.createElement('li');
+    li.innerText = listaSpesa[count];
+    console.log(li.innerHTML);
+    ul.append(li);
+    console.log(ul.innerHTML);
     count++;
 }
